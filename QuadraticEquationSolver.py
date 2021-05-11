@@ -20,9 +20,9 @@ def main_calculation():
             first_ans = fifth_step
             second_ans = sixth_step
             if first_ans == second_ans:
-                print(f"The answer is {first_ans} twice.")
+                return f"The answer is {first_ans} twice."
             else:
-                print(f"The answer is {first_ans} or {second_ans}.")
+                return f"The answer is {first_ans} or {second_ans}."
             # To ask if the user has another question
             question = input("Do You Have Another Equation? ")
             if question == "Yes" or question == 'yes':
@@ -31,7 +31,7 @@ def main_calculation():
                 break
         except ValueError:
             # Code to print when the question is unsolvable.
-            print("Quadratic Equation is unsolvable")
+            return "Quadratic Equation is unsolvable"
             response = input("Do You Have Another Question? ")
             if response == 'yes' or response == "Yes":
                 continue
@@ -39,7 +39,7 @@ def main_calculation():
                 break
 
 
-main_calculation()
+print(main_calculation())
 
 
 # The code below is a simple form of the one above.
