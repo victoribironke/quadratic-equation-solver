@@ -53,7 +53,6 @@ def calc():
     for x in range(-c - 1, c + 1):
         if (a * x * x) + (b * x) + c == 0:
             answer.append(x)
-            break
     else:
         return "Quadratic Equation is unsolvable"
     return f"The answers are {answer}."
