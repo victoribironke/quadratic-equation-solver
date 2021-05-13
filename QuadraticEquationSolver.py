@@ -23,20 +23,8 @@ def main_calculation():
                 return f"The answer is {first_ans} twice."
             else:
                 return f"The answer is {first_ans} or {second_ans}."
-            # To ask if the user has another question
-            question = input("Do You Have Another Equation? ")
-            if question == "Yes" or question == 'yes':
-                continue
-            else:
-                break
         except ValueError:
             # Code to print when the question is unsolvable.
             return "Quadratic Equation is unsolvable"
-            response = input("Do You Have Another Question? ")
-            if response == 'yes' or response == "Yes":
-                continue
-            else:
-                break
-
 
 print(main_calculation())
