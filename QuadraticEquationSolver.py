@@ -40,22 +40,3 @@ def main_calculation():
 
 
 print(main_calculation())
-
-
-# The code below is a simple form of the one above.
-
-'''
-def calc():
-    a = int(input("a = "))
-    b = int(input("b = "))
-    c = int(input("c = "))
-    answer = []
-    for x in range(-c - 1, c + 1):
-        if (a * x * x) + (b * x) + c == 0:
-            answer.append(x)
-    else:
-        return "Quadratic Equation is unsolvable"
-    return f"The answers are {answer}."
-
-print(calc())
-'''
