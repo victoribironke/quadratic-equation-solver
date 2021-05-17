@@ -29,6 +29,4 @@ def main_calculation():
             else:
                 break
 
-
-
 main_calculation()
